@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b18e20e0ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="todo">
+      <div class="header">
+        <h1>To do list</h1>
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="Enter the text of the task..."
+        />
+        <button class="btn-add">Add</button>
+      </div>
+      <div class="todolist">
+        <h3>Things to do:</h3>
+        <p class="error-info"></p>
+        <ul></ul>
+      </div>
+    </div>
+
+    <div class="popup">
+      <h3>Edit task</h3>
+      <div class="popup-body">
+        <p class="popup-info"></p>
+        <input
+          type="text"
+          class="popup-input"
+          placeholder="Enter new task content..."
+        />
+        <button class="popup-btn accept">Confirm</button>
+        <button class="popup-btn cancel">Cancel</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
